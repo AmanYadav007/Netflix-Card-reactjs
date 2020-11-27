@@ -1,0 +1,92 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 720px;
+  background: rgb(14,9,110);
+  background: linear-gradient(338deg, rgba(14,9,110,1) 14%, rgba(199,22,183,1) 53%, rgba(255,0,0,1) 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.flexbox{
+display: flex;
+margin: 20px 130px;
+
+}
+.ml2 {
+  text-align: center;
+  background-color: rgb(255, 16, 16);
+  color: white;
+  margin: 10px 30px;
+  padding: 10px;
+  font-family: 'Dancing Script', cursive;
+}
+.image_title{
+  box-shadow: 0px 20px 30px rgba(255, 0, 0, 0.8);
+  text-align: center;
+  background-color: rgb(49, 49, 49);
+  color: white;
+  border-radius: 8px;
+  padding: 5px 0px 0px 0px;
+}
+.poster{
+  margin: 10px 40px;
+}
+.poster_category{
+  color: red;
+}
+.poster_tit{
+  padding: 10px 0px;
+}
+.btn{
+  background-color: tomato;
+  color: white;
+  margin: 0px 0px 8px 0px;
+  font-size: 15px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  transition: ease-in-out 0.3s;
+  cursor: pointer;
+}
+.btn:hover{
+
+  background-color: rgba(0,0,0,0.8);
+  color: rgb(0, 255, 0);
+  transform: rotate(360deg);
+}
+
+.card_img{
+  width: 220px;
+  height: 300px;
+  justify-content: center;
+  border-radius: 8px;
+  box-shadow: 20px -10px 30px rgba(0,0,0,0.8);
+  cursor: pointer;
+  transition: ease-in-out 0.4s;
+}
+.card_img:hover{
+  transform:scale3d(1.2,1.2,1.2);
+
+
+}
+
+@media (max-width:786px){
+    .flexbox{
+    display:block;
+    }
+    .image_title{
+      width: 200px;
+    }
+    .card_img{
+        width: 200px;
+        height: 250px;
+    }
+    .card_img:hover{
+      width: 210px;
+      height: 260px;
+    }
+
+}
